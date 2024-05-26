@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -a1 | LC_COLLATE=C sort | sed -e 's|/$|&/|' -e 's|$|,|'
